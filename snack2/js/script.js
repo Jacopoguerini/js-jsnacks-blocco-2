@@ -7,28 +7,51 @@ Infine creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti
 var teams = [
     {
     name: "Inter",
-    points: 85,
-    fs: 388
+    points: 0,
+    fs: 0
     },
     {
     name: "Atalanta",
-    points: 72,
-    fs: 441
+    points: 0,
+    fs: 0
     },
     {
     name: "Milan",
-    points: 72,
-    fs: 436
+    points: 0,
+    fs: 0
     },
     {
     name: "Napoli",
-    points: 70,
-    fs: 496
+    points: 0,
+    fs: 0
     },
     {
     name: "Juventus",
-    points: 69,
-    fs: 437
+    points: 0,
+    fs: 0
     },
 ];
 console.log(teams);
+
+// funzione che genera numeri random
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * max - min + 1) + min;
+}
+
+// generazione casuale di punti nell'array
+// Creazione nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
+
+for (var i = 0; i < teams.length; i++) {
+    teams[i].points = getRandomNumber(0, 50);
+    teams[i].fs = getRandomNumber(400, 550);
+
+}
+console.log("Aggiornamento array dopo generazione casuale di punti e falli subiti: ", teams);
+
+
+var arrayFinal = [];
+for (var j = 0; j < teams.length; j++) {
+    arrayFinal.push(teams[i].name, teams[i].fs);
+}
+
+console.log(arrayFinal);
