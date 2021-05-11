@@ -21,14 +21,15 @@ function myFunction (arr, num1, num2) {
         alert("Il primo numero deve essere minore del secondo");
     }
 
-    for (var i = 0; i < arr.lenght; i++) {
-        if (num1 <= arr[i] && num2 >= arr[i]) {
+    for (var i = 0; i < arr.length; i++) {
+        if (num1 <= i && num2 >= i) {
             newArray.push(arr[i]);
         }   
     }
-    console.log(newArray);
+    
     return newArray;
     
 }
 
-console.log(myFunction(array, 2, 7));
+var testFinal = myFunction(array, 1, 6);
+console.log(testFinal);
