@@ -34,24 +34,20 @@ var teams = [
 console.log(teams);
 
 // funzione che genera numeri random
-function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * max - min + 1) + min;
+function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // generazione casuale di punti nell'array
 // Creazione nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
 
+var arrayFinal = [];
 for (var i = 0; i < teams.length; i++) {
-    teams[i].points = getRandomNumber(0, 50);
+teams[i].points = getRandomNumber(69, 85);
     teams[i].fs = getRandomNumber(400, 550);
+
+    arrayFinal.push(teams[i].name, teams[i].fs);
 
 }
 console.log("Aggiornamento array dopo generazione casuale di punti e falli subiti: ", teams);
-
-
-var arrayFinal = [];
-for (var j = 0; j < teams.length; j++) {
-    arrayFinal.push(teams[i].name, teams[i].fs);
-}
-
 console.log(arrayFinal);
