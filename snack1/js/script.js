@@ -32,6 +32,7 @@ console.log(bicycleList);
 // Math.min(3,14,16,33) --> 3
 // creazione array del peso delle biciclette per confronto
 var prop = [];
+
 for (var i = 0; i < bicycleList.length; i++) {
     prop.push(bicycleList[i].weight);
 }
