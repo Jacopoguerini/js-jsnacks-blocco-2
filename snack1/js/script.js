@@ -27,14 +27,14 @@ var bicycleList = [
 ]
 console.log(bicycleList);
 
-function minimumWeight(array, prop) {
+function minimumWeight(array) {
 
     var weightMin;
     for (var i = 0; i < array.length; i++) {
-        weightMin = Math.min(array[i].prop);
+        weightMin = Math.min(array[i].weight);
     }
     return weightMin;
 }
 
-var lighterBicycle = minimumWeight(bicycleList, weight);
+var lighterBicycle = minimumWeight(bicycleList);
 console.log(lighterBicycle);
