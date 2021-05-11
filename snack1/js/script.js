@@ -21,10 +21,11 @@ var bicycleList = [
     weight: 14
     },
     {
-    name: "Giant",
+    name: "Merida",
     weight: 9
     }
 ]
+
 console.log(bicycleList);
 
 function minimumWeight(array) {
