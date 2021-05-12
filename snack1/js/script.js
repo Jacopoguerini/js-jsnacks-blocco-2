@@ -48,5 +48,3 @@ for (var i = 0; i < bicycleList.length; i++) {
         console.log(bicycleList[i]);
     }
 }
-
-

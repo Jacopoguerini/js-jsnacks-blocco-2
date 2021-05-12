@@ -43,7 +43,7 @@ function getRandomNumber(min, max) {
 
 var arrayFinal = [];
 for (var i = 0; i < teams.length; i++) {
-teams[i].points = getRandomNumber(69, 85);
+    teams[i].points = getRandomNumber(69, 85);
     teams[i].fs = getRandomNumber(400, 550);
 
     arrayFinal.push(teams[i].name, teams[i].fs);
